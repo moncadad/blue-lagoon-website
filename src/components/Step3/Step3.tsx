@@ -1,11 +1,12 @@
 import "./step3.css";
+import React from "react";
 import { useState, useEffect } from "react";
 interface Step3Props {
   recipeID: string;
   setRecipeID: (recipeID: string) => void;
 }
 
-const Step3 = ({ recipeID }: Step3Props): JSX.Element | null => {
+const Step3 = ({ recipeID }: Step3Props): React.ReactElement | null => {
   interface CocktailRecipe {
     idDrink: string;
     strDrink: string | null;
@@ -46,13 +47,13 @@ const Step3 = ({ recipeID }: Step3Props): JSX.Element | null => {
     };
   }).filter((item) => item.ingredient);
 
-  if (!recipeID) {
-    return (
-      // <section id="step3">
-      //   <h2>Looks like you haven't made a choice </h2>
-      // </section>
-      console.log("Nothing selected yet")
-    );
+  // if (!recipeID) {
+  //   return (
+  //     // <section id="step3">
+  //     //   <h2>Looks like you haven't made a choice </h2>
+  //     // </section>
+  //     console.log("Nothing selected yet")
+  //   );
   }
 
   return (
