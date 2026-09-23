@@ -2,10 +2,10 @@ import "./step3.css";
 import { useState, useEffect } from "react";
 interface Step3Props {
   recipeID: string;
-  setRecipeID: (recipeID: string) => null;
+  setRecipeID: (recipeID: string) => void;
 }
 
-function Step3({ recipeID }: Step3Props) {
+const Step3 = ({ recipeID }: Step3Props): JSX.Element | null => {
   interface CocktailRecipe {
     idDrink: string;
     strDrink: string | null;
@@ -112,6 +112,6 @@ function Step3({ recipeID }: Step3Props) {
       </div>
     </section>
   );
-}
+};
 
 export default Step3;
