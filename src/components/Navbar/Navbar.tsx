@@ -4,7 +4,6 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import { HeartIcon } from "@heroicons/react/24/solid";
 import logoImg from "../../assets/BlueLagoonColor.svg";
 import "./navbar.css";
 
