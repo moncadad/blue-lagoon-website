@@ -2,8 +2,9 @@ import "./step3.css";
 import { useState, useEffect } from "react";
 interface Step3Props {
   recipeID: string;
-  setRecipeID: (recipeID: string) => void;
+  setRecipeID: (recipeID: string) => null;
 }
+
 function Step3({ recipeID }: Step3Props) {
   interface CocktailRecipe {
     idDrink: string;
@@ -45,7 +46,7 @@ function Step3({ recipeID }: Step3Props) {
     };
   }).filter((item) => item.ingredient);
 
-  if (!recipe) {
+  if (!recipeID) {
     return (
       // <section id="step3">
       //   <h2>Looks like you haven't made a choice </h2>
