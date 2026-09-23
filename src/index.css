@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css2?family=Gilda+Display&family=Hanuman:wght@100..900&family=Happy+Monkey&family=Indie+Flower&family=Roboto+Slab:wght@100..900&display=swap");
+@import "tailwindcss";
+
+:root {
+  --teal: var(--color-teal-600);
+  --teal: #6BB1AD;
+  --turquoise: #6bb1ad;
+  --sunshine-yellow: #ffc857;
+  --sunshine: #f6d695;
+  --coral: #ff6f61;
+  --tropical-pink: #e6748e;
+  --more-pink: var(--color-pink-900);
+  --light-pink: #e5a9a9;
+  /* --light-blue: #ecfdff; */
+  --light-blue: #efffff;
+
+  /* --light-blue: #fff; */
+  --black: #000;
+  --white: #ffffff;
+
+  /* fonts */
+
+  --font-gilda-display: "Gilda Display", serif;
+  --font-hanuman: "Hanuman", serif;
+  --font-indie-flower: "Indie Flower", cursive;
+}
+
+body {
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+.container {
+  margin-inline: auto;
+  width: 100%;
+}
+
+a,
+button {
+  cursor: pointer;
+}

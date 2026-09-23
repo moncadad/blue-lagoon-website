@@ -1,0 +1,39 @@
+#about {
+  background-color: var(--light-pink);
+  color: var(--light-blue);
+  .wrapper {
+    padding: 4rem 1rem;
+    font-family: var(--font-gilda-display);
+    .title {
+      font-size: clamp(4.75rem, 11vw, 8rem);
+      padding-bottom: 2rem;
+      line-height: 1;
+      font-family: var(--font-gilda-display);
+    }
+    .name {
+      font-size: clamp(1.5rem, 12vw, 2.75rem);
+      color: var(--cream);
+      padding-bottom: 0;
+      line-height: 1;
+    }
+    .subtitle {
+      font-size: clamp(1rem, 5vw, 1.5rem);
+      color: var(--tropical-pink);
+      font-family: var(--font-indie-flower);
+      font-weight: 500;
+    }
+    p{
+      line-height: 1.6;
+      font-family: var(--font-hanuman);
+      font-weight: 300;
+    }
+    img {
+      justify-self: center;
+      width: 400px;
+      height: 500px;
+      aspect-ratio: 5 / 4;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}

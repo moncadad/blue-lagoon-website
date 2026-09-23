@@ -1,0 +1,49 @@
+#step3 {
+  background-color: var(--light-blue);
+      font-family: var(--font-gilda-display);
+  color: var(--teal);
+  .wrapper {
+    padding: 4rem 1rem;
+    color: var(--color-pink-900);
+    .title {
+      font-size: clamp(4rem, 12vw, 6rem);
+      font-family: var(--font-indie-flower);
+    }
+    .subtitle {
+      font-size: clamp(2rem, 12vw, 4.5rem);
+      font-weight: 400;
+      padding-bottom: 6rem;
+    }
+
+    .img-col {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .info-col {
+      color: var(--tropical-pink);
+    }
+
+    .recipe-name {
+      font-family: var(--font-gilda-display);
+      font-weight: bolder;
+    }
+
+    .primary-btn {
+      background-color: var(--tropical-pink);
+      border: 2px solid var(--tropical-pink);
+    }
+    .primary-btn:hover,
+    .secondary-btn:hover {
+      background-color: var(--color-pink-900);
+      color: var(--light-blue);
+      border-color: var(--color-pink-900);
+    }
+
+    .secondary-btn {
+      color: var(--tropical-pink);
+      font-weight: 600;
+      border: 2px solid var(--tropical-pink);
+    }
+  }
+}

@@ -1,0 +1,44 @@
+#home {
+  background-color: var(--turquoise);
+  background-image: url("../../assets/bg-home.jpg");
+  /* opacity: .8; */
+  background-size: cover;
+  background-position: top;
+  .wrapper {
+    color: var(--cream);
+    /* opacity: 0.95; */
+    background-size: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    .title {
+      color: var(--sunshine);
+      font-size: clamp(4rem, 16vw, 12rem);
+      line-height: 1;
+      font-family: var(--font-gilda-display);
+      font-weight: 300;
+      letter-spacing: -0.05em;
+    }
+    .subtitle {
+      font-size: clamp(1rem, 2.5vw, 1.5rem);
+      font-family: var(--font-hanuman);
+      color: var(--light-blue);
+
+      margin-bottom: 2rem;
+    }
+    .cta-button {
+      background-color: var(--tropical-pink);
+      color: white;
+      font-weight: 600;
+      font-size: clamp(0.8rem, 2vw, 1rem);
+      transition: all 0.3s ease-in-out;
+      border-radius: 32px;
+      &:hover {
+        background-color: var(--color-pink-900);
+        transform: scale(1.05);
+      }
+    }
+  }
+}

@@ -1,0 +1,48 @@
+.navbar {
+  background-color: var(--tropical-pink) !important; /* Tailwind's gray-800 */
+}
+.navbar-wrap {
+  background-color: rgb(236, 253, 255);
+  color: var(--teal);
+  position: relative;
+  box-shadow: 1px 1px 4px rgb(187, 220, 223);
+}
+
+.navbar-button:hover {
+  background-color: var(--teal);
+  color: white; /* Tailwind's white */
+}
+
+.navbar-link:hover {
+  background-color: var(--teal);
+  color: var(--color-white);
+}
+
+.navbar-link:last-child {
+  background-color: var(--turquoise); /* Tailwind's white/5 */
+  color: white; /* Tailwind's white */
+  background-color: var(--tropical-pink);
+}
+.cta {
+  display: none;
+}
+
+@media (min-width: 800px) {
+  .navbar-link:last-child {
+    display: none;
+    background-color: var(--turquoise); /* Tailwind's white/5 */
+
+    background-color: var(--tropical-pink);
+    color: white; /* Tailwind's white */
+    border-radius: 0.25rem; /* Tailwind's rounded-md */
+  }
+  .cta {
+    display: block;
+    background-color: var(--tropical-pink); /* Tailwind's white/5 */
+    color: white; /* Tailwind's white */
+    border-radius: 2rem;
+  }
+  .cta:hover {
+    background-color: var(--color-pink-900);
+  }
+}
