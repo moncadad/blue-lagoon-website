@@ -1,75 +1,54 @@
-# React + TypeScript + Vite
+# Blue Lagoon
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Table of contents
 
-Currently, two official plugins are available:
+- [Overview](#overview)
+  - [Summary](#summary)
+  - [Screenshot](#screenshot)
+  - [Links](#links)
+- [My process](#my-process)
+  - [Built with](#built-with)
+  - [What I learned](#what-i-learned)
+  - [Continued development](#continued-development)
+  - [Useful resources](#useful-resources)
+## Overview
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+### Summary
 
-## React Compiler
+A business website for a fictional cocktail bar by the name of 'Blue Lagoon'.
+The website consists of common components About, Locations, and a fun interactive cocktail maker.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+### Screenshot
 
-## Expanding the ESLint configuration
+![](./public/screenshot-home.png)
+![](./public/step1.png)
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+### Links
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+- [Live Site URL](https://bluelagoon-cocktails.netlify.app/)
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+## My process
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Built with
 
-```
+- Mobile-first workflow
+- React: Icons
+- Taylwind styling
+- Typescript
+- Nodejs
+- Vite
 
-You can also install [eslint-plugin-react-x](https://npmx.dev/package/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://npmx.dev/package/eslint-plugin-react-dom) for React-specific lint rules:
+### What I learned
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+I learned to use tailwind css, once you understand the class names you begin to see the patterns and realize it's actually quite simple and convinient.
+On the other hand I also learned that I should try to not bite more than I can chew. Complicated API React project + Typescript now that was quite the challenge.
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
+### Continued development
 
-```
+Once I get the hang of Typescript I'd like to give this project a second look. Make it a more personal that allows you to have a profile and saves your faorite recipes.
+
+### Useful resources
+
+[Tailwind Main Website](https://tailwindcss.com/docs/) - Docs helped me understand class names
+[API Cocktails Database](https://www.thecocktaildb.com/)- Provides data for the site
+[React Typescript Tutorial ](https://youtu.be/665UnOGx3Pg?si=SE6jRc9oXZEI04nt) Helped me connect the missing dots
