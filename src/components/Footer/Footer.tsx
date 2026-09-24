@@ -37,7 +37,7 @@ function Footer() {
           <div className="email">
             <h1 className="col-title pb-2  ">Contact Us</h1>
             <p>We appreciate your feedback</p>
-            <a href="mailto:alchemybar@domain.com" className="email-link  ">
+            <a href="mailto:bluelagoon@domain.com" className="email-link  ">
               <FaEnvelope className="inline" />
               alchemybar@email.com
             </a>
