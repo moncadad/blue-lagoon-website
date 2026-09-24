@@ -45,7 +45,7 @@ On the other hand I also learned that I should try to not bite more than I can c
 
 ### Continued development
 
-Once I get the hang of Typescript I'd like to give this project a second look. Make it a more personal that allows you to have a profile and saves your faorite recipes.
+Once I get the hang of Typescript I'd like to give this project a second look. Make it a more personal by allowing you to have a profile where you can save favorite recipes.
 
 ### Useful resources
 
