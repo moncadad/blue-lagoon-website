@@ -112,6 +112,8 @@ function Step2({ category, value, setRecipe }: Step2Props) {
           </div>
 
           <a
+            title="Select Drink "
+            aria-label="Select Drink"
             href="#step3"
             className="select-btn"
             onClick={() => {

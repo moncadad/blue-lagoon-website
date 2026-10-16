@@ -8,10 +8,11 @@ function Home() {
         <p className="subtitle pt-14 text-center uppercase md:pt-0 ">
           Cocktails from paradise
         </p>
-        <a href="#step1">
-          <button className="cta-button mt-4 rounded-full  px-9 py-4 uppercase text-white">
-            Explore Cocktails
-          </button>
+        <a
+          href="#step1"
+          className="cta-button mt-4 rounded-full  px-9 py-4 uppercase text-white"
+        >
+          Explore Cocktails
         </a>
       </div>
     </section>

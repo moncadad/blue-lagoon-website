@@ -23,6 +23,8 @@ function Step1({ setCategory, setValue }: Step1Props) {
 
           <a href="#step2">
             <button
+              title="Select Category "
+              aria-label="Select Category"
               className="select-btn rounded-2xl"
               onClick={() => {
                 setCategory(drink.name);
