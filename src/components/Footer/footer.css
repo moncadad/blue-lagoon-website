@@ -43,12 +43,12 @@
     .email-link {
       .email-icon {
         margin-right: 0.5rem;
-        color: var(--cupid-pink);
+        color: var(--melon);
       }
     }
     .email-link:hover {
-      color: var(--cupid-pink);
-      text-shadow: 2px 2px 10px white;
+      color: var(--melon);
+      /* text-shadow: 2px 2px 10px white; */
       opacity: 1;
     }
   }
