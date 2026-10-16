@@ -1,42 +1,37 @@
 #step2 {
-  /* background-color: var(--orange); */
-  background-color: var(--light-blue);
-  background-color: rgb(71, 18, 42);
-  color: var(--teal);
-  color: var(--light-pink);
-  /* color: var(--color-teal-600); */
+  color: var(--sky-cloud);
+  background-color: var(--veranda-blue);
+  font-family: var(--font-open-sans);
   .wrapper {
     padding: 4rem 1rem;
-    /* color: var(--cream); */
     .title {
       font-size: clamp(4rem, 12vw, 6rem);
-      font-family: var(--font-indie-flower);
+      font-family: var(--font-cursive);
     }
     .subtitle {
-      font-size: clamp(2rem, 12vw, 4.5rem);
-      font-family: var(--font-gilda-display);
+      font-size: clamp(1.75rem, 12vw, 3.5rem);
+      font-family: var(--font-open-sans);
       font-weight: 400;
-      padding-bottom: 5rem;
+      padding-bottom: 4rem;
     }
     h3 {
       /* text-align: center; */
-      font-size: clamp(2rem, 2.5vw, 2rem);
-      font-family: var(--font-gilda-display);
+      font-size: 1.75rem;
+      font-family: var(--font-open-sans);
       padding-bottom: 0.5rem;
-      color: var(--tropical-pink);
       .category {
-        color: var(--light-pink);
+        color: var(--cupid-pink);
+        text-transform: lowercase;
       }
     }
     .drink-cards {
       .drink-card {
         position: relative;
-        font-family: var(--font-gilda-display);
-        background-color: rgb(71, 18, 42);
+        background-color: var(--lychee);
         border-radius: 2rem;
 
         .card-info {
-          color: var(--light-blue);
+          color: var(--sky-cloud);
           position: absolute;
           bottom: 0;
           left: 0;
@@ -44,34 +39,31 @@
           display: flex;
           align-items: flex-end;
           justify-content: space-between;
-          padding: 2rem;
+          padding: 1rem;
 
           .drink-card__name {
-            /* font-weight: 600; */
+            font-weight: 600;
             color: white;
-            font-size: 28px;
+            font-size: 1.75rem;
+            max-width: 75%;
+            font-family: var(--font-serif);
             .categories {
-              font-size: 16px;
-              /* color: var(--turquoise); */
+              font-size: 1rem;
             }
           }
           .select-btn {
-            /* font-family: var(--font-happy-monkey); */
             display: flex;
             justify-content: center;
             align-items: center;
-            height: 64px;
-            width: 64px;
-            font-size: 24px;
+            height: 4rem;
+            width: 4rem;
+            font-size: 1.5rem;
           }
           .select-btn {
             position: relative;
-            /* display: inline-block; */
-            /* padding: 14px 28px; */
-            font-size: 16px;
+            font-size: 1rem;
             font-weight: bold;
-            color: rgb(71, 18, 42);
-            background-color: var(--tropical-pink);
+            background-color: var(--cupid-pink);
             border-radius: 100%;
             cursor: pointer;
             overflow: hidden;
@@ -87,7 +79,7 @@
             left: 50%;
             width: 300%;
             height: 300%;
-            background-color: rgb(71, 18, 42);
+            background-color: var(--melon);
             border-radius: 50%;
             transform: translate(-50%, -50%) scale(0);
             transition: transform 0.4s cubic-bezier(0.5, 0, 0.5, 1);
@@ -98,20 +90,15 @@
           .select-btn:hover::before {
             transform: translate(-50%, -50%) scale(1);
           }
-
-          .select-btn:hover {
-            color: #ffffff;
-          }
         }
       }
 
       .select-btn {
-        color: var(--cream);
+        color: white;
         border-radius: 2rem;
         text-align: center;
         a {
           display: block;
-          /* background-color: red; */
           padding: 0.75rem;
           display: block;
           border-radius: 2rem;
@@ -119,16 +106,49 @@
         }
       }
       img {
-        /* border-radius: 200px; */
-        /* height: 20rem; */
-        /* width: 20rem; */
         border-radius: 1.75rem;
         object-fit: cover;
         filter: contrast(110%);
-        /* filter:drop-shadow(110%) */
+        /* filter:drop-shadow(110%); */
         filter: saturate(120%);
       }
     }
+  }
+}
+.drink-card__image-wrap {
+  /* width: 100%; */
+  border-radius: 1.75rem;
+  /* height: 100%; */
+  background-size: 100% 300%;
+  animation: gradient-shift 6s ease infinite;
+}
+.spinner {
+  /* width: 5rem; */
+  /* height: 5rem; */
+  animation: spin 16s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gradient-shift {
+  0% {
+    background: var(--sky-cloud);
+    ease: ease-in-out;
+  }
+  50% {
+    background: var(--melon);
+    ease: ease-in-out;
+  }
+  100% {
+    background: var(--sky-cloud);
+    ease: ease-in-out;
   }
 }
 

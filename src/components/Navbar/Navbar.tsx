@@ -4,7 +4,6 @@ import {
   DisclosurePanel,
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
-import logoImg from "../../assets/BlueLagoonColor.svg";
 import "./navbar.css";
 
 const navigation = [
@@ -41,10 +40,13 @@ export default function Navbar() {
             </div>
             <div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-start">
               <div className="flex shrink-0 items-center">
-                <img alt="Your Company" src={logoImg} className="h-6 w-auto" />
+                {/* <img alt="Your Company" src={logoImg} className="h-6 w-auto" /> */}
+                <a href="#" className="logo-text text-xl font-bold">
+                  Blue Lagoon
+                </a>
               </div>
               <div className="hidden sm:ml-6 sm:block">
-                <div className="flex space-x-4">
+                <div className="flex gap-4 space-x-4">
                   {navigation.map((item) => (
                     <a
                       key={item.name}
@@ -52,9 +54,9 @@ export default function Navbar() {
                       aria-current={item.current ? "page" : undefined}
                       className={classNames(
                         item.current
-                          ? "dark:bg-gray-950/50 bg-gray-900 text-white "
+                          ? " "
                           : "navbar-link  hover:bg-white/5 ",
-                        "rounded-md px-3 py-2 text-sm font-medium",
+                        "  px-2 py-2 text-sm font-medium",
                       )}
                     >
                       {item.name}
@@ -87,7 +89,7 @@ export default function Navbar() {
                   item.current
                     ? "dark:bg-gray-950/50 navbar-link bg-gray-900 "
                     : "navbar-link  hover:bg-white/5 ",
-                  "block rounded-md px-3 py-2 text-base font-medium",
+                  "block  px-3 py-2 text-base font-medium",
                 )}
               >
                 {item.name}

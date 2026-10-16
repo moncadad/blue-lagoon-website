@@ -1,87 +1,75 @@
 #step1 {
-  background-color: var(--light-blue);
-  color: var(--teal);
+  background-color: var(--white);
+  color: var(--veranda-blue);
   .wrapper {
     padding: 4rem 1rem;
-    /* border: 1px solid yellowgreen; */
+    
     .title {
       font-size: clamp(4rem, 12vw, 6rem);
-      font-family: var(--font-indie-flower);
+      font-family: var(--font-cursive);
     }
     .subtitle {
-      font-size: clamp(2rem, 12vw, 4.5rem);
-      font-family: var(--font-gilda-display);
-      font-weight: 400;
+      font-size: clamp(1.75rem, 12vw, 3.5rem);
+      font-family: var(--font-open-sans);
+      font-weight: 200;
       padding-bottom: 6rem;
     }
 
     .drink-cards {
       display: flex;
-      /* grid-template-columns: repeat(2, 1fr); */
       gap: 1rem;
       justify-content: flex-start;
       overflow-x: scroll;
       overflow-y: hidden;
-      font-family: "Gilda Display", serif !important;
       font-weight: 500;
-      scrollbar-color: var(--tropical-pink);
-      /* padding-bottom: 2rem; */
+      scrollbar-color: var(--cupid-pink);
 
       .drink-card {
-        /* height: 300px; */
         font-size: 2rem;
-        color: var(--cream);
+        color: var(--color-white);
         margin-bottom: -3.5rem;
         position: relative;
         border: none;
         .drink-card__name {
           position: relative;
-          /* background-color: var(--dark-green-cover); */
           bottom: 58px;
           margin-bottom: -2rem;
-          color: var(--light-blue);
+          color: var(--sky-cloud);
+      font-family: var(--font-serif);
 
           display: flex;
           align-items: center;
           justify-content: space-around;
           margin: 4px;
           .select-btn {
-            /* border: 1px solid white; */
             font-size: 1.5rem;
-            padding: 3px 12px;
+            /* padding: .5rem 1rem; */
             color: var(--light-blue);
             &:hover {
-              background-color: var(--tropical-pink);
-              /* border-color: var(--tropical-pink); */
+              background-color: var(--cupid-pink);
             }
           }
         }
 
         .select-btn {
-          /* font-family: var(--font-happy-monkey); */
           display: flex;
           justify-content: center;
           align-items: center;
-          height: 32px;
-          width: 56px;
-          font-size: 24px;
+          height: 2rem;
+          width: 3.5rem;
+          font-size: 1.5rem;
         }
         .select-btn {
           position: relative;
-          /* display: inline-block; */
-          /* padding: 14px 28px; */
-          font-size: 16px;
+          font-size:  1rem;
           font-weight: bold;
-          color: rgb(71, 18, 42);
-          background-color: var(--tropical-pink);
-          /* border-radius: 100%; */
+          background-color: var(--cupid-pink);
           cursor: pointer;
           overflow: hidden;
           z-index: 1;
           transition: color 0.4s ease;
         }
 
-        /* The expanding fill layer */
         .select-btn::before {
           content: "";
           position: absolute;
@@ -89,7 +77,7 @@
           left: 0%;
           width: 300%;
           height: 300%;
-          background-color: rgb(71, 18, 42);
+          background-color: var(--veranda-blue);
           border-radius: 50%;
           transform: translate(-50%, -50%) scale(0);
           transition: transform 0.4s cubic-bezier(0.5, 0, 0.5, 1);

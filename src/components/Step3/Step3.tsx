@@ -56,13 +56,13 @@ const Step3 = ({ recipeID }: Step3Props): React.ReactElement | null => {
       <div className="wrapper mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <h1 className="title text-end ">Step 3</h1>
         <h2 className="subtitle pb-4 text-end">Let's make it! </h2>
-        <div className="row  grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2 ">
+        <div className="row  grid grid-cols-1 gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-2">
           <div className="img-col ">
-            <div className=" rounded-2xl bg-pink-900 ">
+            <div className="drink-card__image-wrap rounded-2xl">
               <img
                 src={recipe?.strDrinkThumb}
                 alt="recipe name"
-                className=" mask-b-from-80% mask-b-to-120% w-lg rounded-2xl"
+                className=" mask-b-from-90% mask-b-to-120% w-lg rounded-2xl"
               />
             </div>
           </div>
@@ -70,26 +70,30 @@ const Step3 = ({ recipeID }: Step3Props): React.ReactElement | null => {
             <h1 className="recipe-name text-3xl font-medium md:text-4xl">
               {recipe?.strDrink}
             </h1>
-            <h2 className="pb-6 text-xl  md:text-2xl">
+            <h2 className="category pb-10  text-xl md:text-2xl">
               {" "}
               {recipe?.strCategory}
             </h2>
-            <p className="pb-2">Glass: {recipe?.strGlass}</p>
-            <ul className="pb-2">
-              <p>Ingredients:</p>
-              {ingredients.map((item, index) => (
-                <li key={index} className="">
-                  {item.measure}
-                  {"- "} {item.ingredient}
-                </li>
-              ))}
-            </ul>
-            <div className="pb-4">
-              <p>Instructions:</p>
-              {recipe?.strInstructions}
+            <p className="pb-2 ">
+              <span className="recipe-subtitle">Glass</span>: {recipe?.strGlass}
+            </p>
+            <div className=" gap-6 pb-4 ">
+              <ul className=" pb-2  ">
+                <p className="recipe-subtitle">Ingredients:</p>
+                {ingredients.map((item, index) => (
+                  <li key={index} className="">
+                    {item.measure}
+                    {"- "} {item.ingredient}
+                  </li>
+                ))}
+              </ul>
+              <div className="pb-4 ">
+                <p className="recipe-subtitle">Instructions:</p>
+                {recipe?.strInstructions}
+              </div>
             </div>
 
-            <div className="buttons gap-6 md:flex ">
+            <div className="buttons gap-6 font-bold md:flex">
               <a
                 className="secondary-btn label mb-4 flex w-full items-center justify-center  rounded-3xl px-6 py-2 text-white md:w-auto "
                 href="#step2"

@@ -11,7 +11,7 @@ function Step1({ setCategory, setValue }: Step1Props) {
   const drinkCards = categoryCardsInfo.map((drink) => {
     return (
       <div className={`drink-card card-${drink.id} rounded-2xl`} key={drink.id}>
-        <div className="rounded-2xl bg-pink-900 ">
+        <div className="rounded-2xl bg-pink-400 ">
           <img
             src={drink.image}
             alt={drink.name}
@@ -19,7 +19,7 @@ function Step1({ setCategory, setValue }: Step1Props) {
           />
         </div>
         <div className="drink-card__name rounded-2xl ">
-          <p className="">{drink.name}</p>
+          <p className="text-white">{drink.name}</p>
 
           <a href="#step2">
             <button

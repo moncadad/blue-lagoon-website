@@ -1,48 +1,54 @@
 .navbar {
-  background-color: var(--tropical-pink) !important; /* Tailwind's gray-800 */
-}
-.navbar-wrap {
-  background-color: rgb(236, 253, 255);
-  color: var(--teal);
-  position: relative;
-  box-shadow: 1px 1px 4px rgb(187, 220, 223);
-}
+  background-color: var(--color-white);
+  .navbar-wrap {
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    /* background-color: red; */
+    color: var(--veranda-darkblue);
+    box-shadow: 1px 1px 4px rgb(187, 220, 223);
+  }
+  .navbar-wrap .logo-text {
+    font-family: var(--font-cursive);
+    font-size: 1.75rem;
+  }
 
-.navbar-button:hover {
-  background-color: var(--teal);
-  color: white; /* Tailwind's white */
-}
+  .navbar-button:hover {
+    background-color: var(--veranda-blue);
+    color: white; 
+  }
 
-.navbar-link:hover {
-  background-color: var(--teal);
-  color: var(--color-white);
-}
+  .navbar-link:hover {
+    color: var(--veranda-blue) ;
+  }
 
-.navbar-link:last-child {
-  background-color: var(--turquoise); /* Tailwind's white/5 */
-  color: white; /* Tailwind's white */
-  background-color: var(--tropical-pink);
-}
-.cta {
-  display: none;
-}
-
-@media (min-width: 800px) {
   .navbar-link:last-child {
-    display: none;
-    background-color: var(--turquoise); /* Tailwind's white/5 */
-
-    background-color: var(--tropical-pink);
     color: white; /* Tailwind's white */
-    border-radius: 0.25rem; /* Tailwind's rounded-md */
+    text-align: center;
+    background-color: var(--cupid-pink);
+    border-radius: 4rem; 
+  }
+
+  .navbar-link:last-child:hover {
+    background-color: var(--melon);
+    color: var(--lychee) ;
   }
   .cta {
-    display: block;
-    background-color: var(--tropical-pink); /* Tailwind's white/5 */
-    color: white; /* Tailwind's white */
-    border-radius: 2rem;
+    display: none;
   }
-  .cta:hover {
-    background-color: var(--color-pink-900);
+
+  @media (min-width: 800px) {
+    .navbar-link:last-child {
+      display: none;
+    }
+    .cta {
+      display: block;
+      background-color: var(--cupid-pink); 
+      border-radius: 2rem;
+    }
+    .cta:hover {
+      background-color: var(--melon);
+      color: var(--lychee);
+    }
   }
 }
