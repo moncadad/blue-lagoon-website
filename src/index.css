@@ -3,9 +3,8 @@
 @import "tailwindcss";
 
 :root {
-
   --veranda-blue: #27d6d1;
-  --veranda-darkblue: #23aca7;
+  --veranda-darkblue: #1f9995;
   --sky-cloud: #b7f1f4;
   --cupid-pink: #ff4da6;
   --melon: #ff8eb6;
@@ -15,7 +14,6 @@
   --black: #000;
   /* ====================================================== */
 
-  
   --font-cursive: "Sacramento", cursive;
   --font-serif: serif;
   --font-open-sans: "Open Sans Sauce", sans-serif;

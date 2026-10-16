@@ -17,17 +17,29 @@ function Footer() {
             <h1 className="col-title pb-4 ">Follow Us</h1>
             <ul className="social-links flex gap-6 text-lg">
               <li className="social-link">
-                <a href="#">
+                <a
+                  aria-label="Follow us on Instagram"
+                  href="https://www.instagram.com/"
+                  target="_blank"
+                >
                   <FaInstagram />
                 </a>
               </li>
               <li className="social-link">
-                <a href="#">
+                <a
+                  aria-label="Follow us on Twitter"
+                  href="https://x.com/?lang=en"
+                  target="_blank"
+                >
                   <FaXTwitter />
                 </a>
               </li>
               <li className="social-link">
-                <a href="#">
+                <a
+                  aria-label="Follow us on Tiktok"
+                  href="https://www.tiktok.com/"
+                  target="_blank"
+                >
                   <FaTiktok />
                 </a>
               </li>

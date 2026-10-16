@@ -95,12 +95,14 @@ const Step3 = ({ recipeID }: Step3Props): React.ReactElement | null => {
 
             <div className="buttons gap-6 font-bold md:flex">
               <a
+                aria-label="Select another drink"
                 className="secondary-btn label mb-4 flex w-full items-center justify-center  rounded-3xl px-6 py-2 text-white md:w-auto "
                 href="#step2"
               >
                 Select another drink
               </a>
               <a
+                aria-label="Let's start again"
                 className="btn primary-btn label mb-4 flex w-full items-center justify-center  rounded-3xl px-6 py-2 text-white md:w-auto"
                 href="#step1"
               >

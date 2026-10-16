@@ -9,8 +9,9 @@ function Home() {
           Cocktails from paradise
         </p>
         <a
+          aria-label="Explore Cocktails"
           href="#step1"
-          className="cta-button mt-4 rounded-full  px-9 py-4 uppercase text-white"
+          className="cta-button mt-4 rounded-full  px-9 py-4 uppercase"
         >
           Explore Cocktails
         </a>
