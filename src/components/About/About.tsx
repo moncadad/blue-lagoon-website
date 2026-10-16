@@ -8,7 +8,7 @@ function About() {
           <div className="info-col flex flex-col justify-end py-10 sm:px-10 ">
             <h1 className="title pb-20 font-bold">About Us</h1>
             <h2 className="name ">Rebecca Jones </h2>
-            <i className="subtitle block pb-4 font-bold">
+            <i className="subtitle block pb-4 ">
               {" "}
               Owner of Blue Lagoon
             </i>

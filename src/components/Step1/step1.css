@@ -1,9 +1,9 @@
 #step1 {
-  background-color: var(--white);
+  background-color: var(--color-white);
   color: var(--veranda-blue);
   .wrapper {
     padding: 4rem 1rem;
-    
+
     .title {
       font-size: clamp(4rem, 12vw, 6rem);
       font-family: var(--font-cursive);
@@ -35,7 +35,7 @@
           bottom: 58px;
           margin-bottom: -2rem;
           color: var(--sky-cloud);
-      font-family: var(--font-serif);
+          font-family: var(--font-serif);
 
           display: flex;
           align-items: center;
@@ -44,7 +44,7 @@
           .select-btn {
             font-size: 1.5rem;
             /* padding: .5rem 1rem; */
-            color: var(--light-blue);
+            color: var(--color-white);
             &:hover {
               background-color: var(--cupid-pink);
             }
@@ -61,7 +61,7 @@
         }
         .select-btn {
           position: relative;
-          font-size:  1rem;
+          font-size: 1rem;
           font-weight: bold;
           background-color: var(--cupid-pink);
           cursor: pointer;

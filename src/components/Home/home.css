@@ -1,7 +1,7 @@
 #home {
   /* background-color: var(--turquoise); */
   background-color: var(--veranda-blue);
-  background-image: url("../../assets//bg-home1.jpg");
+  background-image: url("../../assets//bg-home-mobile.jpg");
   background-size: cover;
   .wrapper {
     color: var(--cream);
@@ -26,6 +26,8 @@
     }
     .cta-button {
       background-color: var(--cupid-pink);
+      color: var(--color-white);
+      font-weight: bold;
       font-size: clamp(0.8rem, 2vw, 1rem);
       letter-spacing: 2px;
       transition: all 500ms ease-in-out;
@@ -33,10 +35,15 @@
       &:focus {
         transform: scale(1.01);
         background-color: var(--melon);
-        color: var(--white);
         font-weight: bold;
         transition: all 500ms ease-in-out;
       }
     }
+  }
+}
+
+@media screen and (min-width: 800px) {
+  #home {
+    background-image: url("../../assets//bg-home2.jpg");
   }
 }
