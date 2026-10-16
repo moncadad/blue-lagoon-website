@@ -11,6 +11,7 @@
   - [What I learned](#what-i-learned)
   - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
+
 ## Overview
 
 ### Summary
@@ -20,7 +21,7 @@ The website consists of common components About, Locations, and a fun interactiv
 
 ### Screenshot
 
-![](./public/screenshot-home.png)
+![](./public/screenshot.png)
 ![](./public/step1.png)
 
 ### Links
